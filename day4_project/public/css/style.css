@@ -1,21 +1,26 @@
 html,
 body {
-
-  background: rgb(92,241,142);
-background: linear-gradient(90deg, rgba(92,241,142,1) 0%, rgba(0,0,0,1) 49%, rgba(0,247,255,1) 100%);
+  background: rgb(92, 241, 142);
+  background: linear-gradient(
+    90deg,
+    rgba(92, 241, 142, 1) 0%,
+    rgba(0, 0, 0, 1) 49%,
+    rgba(0, 247, 255, 1) 100%
+  );
 }
 
 h1 {
   font-size: 72px;
   background: -webkit-linear-gradient(rgb(30, 118, 232), rgb(87, 240, 181));
-  
+  -webkit-background-clip: text;
+
   -webkit-text-fill-color: transparent;
 }
 
 h2 {
   font-size: 72px;
   background: -webkit-linear-gradient(rgb(30, 118, 232), rgb(123, 160, 199));
-  
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Zalando{% endblock %}</title>
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    </head>
+    <body>
+    
+
+    {{include ('inc/boot.html.twig')}}
+    {{include ('inc/nav.html.twig')}}
+        {% block body %}{% endblock %}
+    </body>
+</html>

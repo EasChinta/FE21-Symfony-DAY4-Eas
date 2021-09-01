@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+	<h1 class="mt-5 text-center animate__animated animate__wobble">Welcome to Zalando</h1>
+
+
+	<div class="container mt-5">
+		<div class="row">
+
+			{% for products in products %}
+
+				<div class=" container card mt-5 mb-5 shadow-lg bg-dark text-light" style="width: 18rem;">
+					<img src="{{products.picture}}" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h2 class="card-title text-center text-light ">{{products.name}}</h2>
+						<p class="card-text">{{products.description}}</p>
+						<a href="/details/{{products.id}}" class="btn-grad">View</a>
+						<a href="/edit/{{products.id}}" class="btn-grad3">Edit</a>
+						<a href="/delete/{{products.id}}" onclick="return confirm('Are you sure you want to delete this?')" class="btn-grad2">Delete</a>
+					</div>
+				</div>
+
+		{% endfor %}
+	</div>
+</div>{% endblock %}
